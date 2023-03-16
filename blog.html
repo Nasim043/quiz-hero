@@ -112,6 +112,32 @@
         </p>
       </div>
     </div>
+    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+      <div class="collapse-title text-xl font-medium bg-sky-100">
+        4. Explain quizTimer function in your own words.
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">The quizTimer function receives a parameter called dismiss. If it has a truthy value, it
+          clears the times of the setTimeout function and returns nothing. The callback function inside setTimeout
+          simply calculates the total minutes and seconds spent on the quiz. It injects the time into the index html
+          file by getting the element using querySelector. If the total time is greater than 60 seconds, the timer turns
+          into red color. The red color depth change according to even and odd second.
+        </p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+      <div class="collapse-title text-xl font-medium bg-sky-100">
+        5. Explain chooseQuiz function in your own words.
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">Every time we select an answer for a question chooseQuiz will call and receive the chosen
+          answer and serial no of that question. The answer is an object of arrays that store every quiz question data
+          and our given answer for that quiz question. If an answer for a quiz is already existed then it replaces the
+          answer for that quiz otherwise just added quiz question data and our given answer. Finally, the displayAnswers
+          function will call for display data.
+        </p>
+      </div>
+    </div>
   </main>
 </body>
 

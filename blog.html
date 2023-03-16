@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <title>Blog Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            common: ["Rubik", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-white font-common">
+  <main class="w-full max-w-7xl mx-auto mt-8">
+    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+      <div class="collapse-title text-xl font-medium bg-sky-100">
+        1. What is the difference between map, filter, forEach and find?
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">
+          <b>map():</b> <br>
+        <ul class="list-disc list-inside">
+          <li>This method create new array by calling the provided function in every element.<br></li>
+          <li>The map() method does not execute the function for array elements without values.<br></li>
+          <li>This method does not change the original array.<br></li>
+        </ul>
+        </p>
+        <p class="text-lg">
+          <b>filter():</b> <br>
+        <ul class="list-disc list-inside">
+          <li>This method create new array with only elements passed condition inside the provided function.<br></li>
+          <li>filter() does not execute the function for array elements without values.<br></li>
+          <li>filter() does not change the original array.<br></li>
+        </ul>
+        </p>
+        <p class="text-lg">
+          <b>forEach():</b> <br>
+        <ul class="list-disc list-inside">
+          <li>This method loop over array’s items and perform an action on each item.<br></li>
+          <li>The forEach() method does not return an array.<br></li>
+        </ul>
+        </p>
+        <p class="text-lg">
+          <b>find():</b> <br>
+        <ul class="list-disc list-inside">
+          <li>This method is used to search for a specific value in an array.<br></li>
+          <li>It returns the first matched element if found otherwise retrun undefined.<br></li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+      <div class="collapse-title text-xl font-medium bg-sky-100">
+        2. What is the difference between cookies, local storage and session storage?
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">
+          <b>cookies:</b> <br>
+        <ul class="list-disc list-inside">
+          <li>Used to store small amounts of data, for example, data for user identification.<br></li>
+          <li>expiration date can be set.<br></li>
+          <li>Can be shared between tabs.<br></li>
+        </ul>
+        </p>
+        <p class="text-lg">
+          <b>local storage:</b> <br>
+        <ul class="list-disc list-inside">
+          <li>Shared between all tabs and windows with the same origin.<br></li>
+          <li>Survives browser restart.<br></li>
+          <li>It never expires.<br></li>
+        </ul>
+        </p>
+        <p class="text-lg">
+          <b>session storage:</b> <br>
+        <ul class="list-disc list-inside">
+          <li>Visible within a browser tab, including iframes from the same origin.<br></li>
+          <li>Survives page refresh but not tab close.<br></li>
+          <li>Expires on the tab close.<br></li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+      <div class="collapse-title text-xl font-medium bg-sky-100">
+        3. What is event loop and how it works?
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">The Event Loop has one simple job — to monitor the Call Stack and the
+          Callback Queue.<br>
+          Whenever asynchronous events like setTimeOut or promises happen if there is any I/O involved, it then takes
+          some time to accomplish these tasks. They simply put into the message queue or callback queue if their I/O was
+          complete or if there was none. The event loop first completes the call stack tasks, after which it will search
+          for any callback or message queue tasks to perform.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
